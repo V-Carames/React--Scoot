@@ -1,4 +1,4 @@
-import Hero from "../sections/Hero";
+import Hero from "../sections/home/Hero";
 
 function Home() {
   return (
