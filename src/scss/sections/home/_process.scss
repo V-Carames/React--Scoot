@@ -1,0 +1,139 @@
+.process-section {
+  max-width: 73.38rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 2rem;
+  margin-bottom: 7.44rem;
+
+  &__list,
+  &__list-item,
+  &__list-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    text-align: center;
+  }
+}
+
+.process-section__list {
+  gap: 3rem;
+
+  &-item img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  &-content {
+    max-width: 21.5rem;
+
+    text-align: center;
+  }
+
+  &-heading {
+    font-family: var(--ff-two);
+    font-weight: var(--ff-700);
+    font-size: var(--fs-20);
+    line-height: 1.4;
+
+    letter-spacing: -0.06rem;
+    color: var(--primary-clr-two);
+  }
+
+  &-text {
+    font-family: var(--ff-one);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-15);
+    line-height: 1.67;
+    color: var(--primary-clr-four);
+  }
+}
+
+@media (min-width: 43.75em) {
+  .process-section {
+    margin: 0 auto 9.06rem auto;
+
+    &__list {
+      gap: 2.5rem;
+
+      &-item {
+        position: relative;
+        flex-direction: row;
+        align-items: start;
+        gap: 4.94rem;
+
+        text-align: start;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: -11.88rem;
+          left: 2.5rem;
+          width: 0.94rem;
+          height: 16.25rem;
+
+          background-color: hsl(212deg, 41%, 93%);
+          z-index: -1;
+        }
+      }
+
+      &-item img {
+        width: 6rem;
+        height: 6rem;
+      }
+
+      &-content {
+        max-width: 25rem;
+
+        align-items: start;
+        justify-content: start;
+        gap: 1.69rem;
+
+        text-align: start;
+      }
+
+      &-heading {
+        font-size: var(--fs-24);
+        line-height: 1.17;
+        letter-spacing: -0.07rem;
+      }
+
+      &-text {
+        text-align: start;
+      }
+    }
+  }
+}
+
+@media (min-width: 65.63em) {
+  .process-section {
+    margin: 0 auto 12rem auto;
+
+    &__list {
+      flex-direction: row;
+      gap: 1.88rem;
+
+      &__list-content {
+        align-items: start;
+        gap: 1.69rem;
+      }
+
+      &-item {
+        flex-direction: column;
+        gap: 2.5rem;
+
+        &:before {
+          top: -34.63rem;
+          left: -33.13rem;
+          height: 75rem;
+
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
