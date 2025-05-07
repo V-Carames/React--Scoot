@@ -1,0 +1,29 @@
+.button {
+  min-height: 2.75rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--ff-two);
+  font-weight: var(--ff-700);
+  font-size: var(--fs-15);
+  line-height: 1.67;
+  text-align: center;
+  color: var(--neutral-clr-one);
+
+  border: solid 0.06rem var(--primary-clr-one);
+  background: var(--primary-clr-one);
+}
+
+@media (hover: hover) {
+  .button:is(:hover, :focus, :focus-visible) {
+    color: var(--primary-clr-one);
+    background: transparent;
+
+    outline: solid 0.13rem var(--primary-clr-one);
+    outline-offset: 0.25rem;
+
+    transition: var(--transition);
+  }
+}

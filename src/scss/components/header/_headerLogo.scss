@@ -1,0 +1,25 @@
+.header__logo {
+  width: 4.72rem;
+
+  @media (hover: hover) {
+    &:is(:hover, :focus, :focus-visible) {
+      outline: solid 0.13rem var(--primary-clr-one);
+      outline-offset: 0.25rem;
+      transition: var(--transition);
+    }
+  }
+}
+
+@media (min-width: 50em) {
+  .header__logo {
+    width: 8.8rem;
+    margin-right: 3.63rem;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .header__logo {
+    width: 8.8rem;
+    margin-right: 2.94rem;
+  }
+}
