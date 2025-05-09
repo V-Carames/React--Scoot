@@ -1,0 +1,7 @@
+@media (hover: hover) {
+  .footer-logo:is(:hover, :focus, :focus-visible) {
+    outline: solid 0.13rem var(--primary-clr-one);
+    outline-offset: 0.25rem;
+    transition: var(--transition);
+  }
+}

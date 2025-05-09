@@ -1,0 +1,18 @@
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+
+  &__icon {
+    fill: var(--primary-clr-one);
+  }
+}
+
+@media (hover: hover) {
+  .footer-social__icon:is(:hover, :focus, :focus-visible) {
+    fill: var(--neutral-clr-two);
+
+    outline: solid 0.13rem var(--primary-clr-one);
+    outline-offset: 0.25rem;
+    transition: var(--transition);
+  }
+}
