@@ -1,0 +1,85 @@
+.benefits-block {
+  max-width: 69.38rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+
+  margin: 0 auto;
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    text-align: center;
+  }
+
+  &__heading {
+    max-width: 16ch;
+    font-family: var(--ff-two);
+    font-weight: var(--ff-700);
+    font-size: var(--fs-32);
+    line-height: 1;
+    letter-spacing: -0.09rem;
+    color: var(--primary-clr-two);
+  }
+
+  &__text {
+    max-width: 64ch;
+    font-family: var(--ff-one);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-15);
+    line-height: 1.67;
+    color: var(--primary-clr-four);
+  }
+
+  &__btn {
+    padding: 0.88rem 2.75rem 0.81rem 2.75rem;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .benefit-block__heading {
+    font-size: var(--fs-48);
+    line-height: 1;
+    letter-spacing: -0.13rem;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .benefits-block {
+    flex-direction: row-reverse;
+    gap: 12.25rem;
+
+    margin-top: 0.44rem;
+
+    &--alt {
+      flex-direction: row;
+      gap: 13.75rem;
+    }
+
+    &__content {
+      align-items: start;
+      gap: 1.5rem;
+
+      text-align: start;
+
+      &-inner--careers {
+        margin-top: 0;
+      }
+    }
+
+    &__text {
+      max-width: 49ch;
+      margin-bottom: 0.81rem;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.benefits-section {
+  display: flex;
+  flex-direction: column;
+  gap: 7.44rem;
+
+  padding: 0 2rem;
+  margin-bottom: 7.38rem;
+
+  &__pattern {
+    position: relative;
+  }
+
+  &__pattern--one::before {
+    position: absolute;
+    content: url(src/assets/patterns/left-downward-arrow.svg);
+    bottom: 23.5rem;
+    right: -26.5rem;
+  }
+
+  &__pattern--two::before {
+    position: absolute;
+    content: url(src/assets/patterns/right-arrow.svg);
+    top: -0.5rem;
+    left: -13.5rem;
+  }
+
+  &__pattern--three::before {
+    position: absolute;
+    content: url(src/assets/patterns/left-downward-arrow.svg);
+    top: -0.06rem;
+    right: -34.63rem;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .benefits-section {
+    margin-bottom: 8.13rem;
+
+    &--careers {
+      margin-bottom: 7.5rem;
+    }
+
+    &__about {
+      margin-bottom: 7.69rem;
+    }
+
+    &__content {
+      gap: 3.44rem;
+
+      &--careers {
+        gap: 3.94rem;
+      }
+
+      &-container {
+        gap: 2.5rem;
+      }
+    }
+
+    &__pattern--one:before {
+      bottom: 21.81rem;
+      right: -2.38rem;
+    }
+
+    &__pattern--one::after {
+      position: absolute;
+      content: url(src/assets/patterns/circle.svg);
+      top: 0;
+      right: -23.88rem;
+
+      z-index: -4;
+    }
+
+    &__pattern--two::before {
+      top: 0.5rem;
+      left: -8.13rem;
+    }
+
+    &__pattern--two::after {
+      position: absolute;
+      content: url(src/assets/patterns/circle.svg);
+      top: 0.5rem;
+      left: -23.57rem;
+
+      z-index: -4;
+    }
+    &__pattern--three::before {
+      top: 5.94rem;
+      right: -26.13rem;
+    }
+
+    &__pattern--three::after {
+      position: absolute;
+      content: url(src/assets/patterns/circle.svg);
+      top: 1rem;
+      right: -27.69rem;
+
+      z-index: -4;
+    }
+  }
+}
+
+@media (min-width: 62.5em) {
+  .benefits-section {
+    flex-direction: column;
+    gap: 9.56rem;
+
+    margin-bottom: 12.5rem;
+
+    &--about {
+      gap: 7.06rem;
+
+      margin-bottom: 7.19rem;
+    }
+
+    &--careers {
+      margin-bottom: 7.5rem;
+    }
+
+    &__pattern--one::before {
+      bottom: -0.75rem;
+      right: -2rem;
+    }
+
+    &__pattern--one::after {
+      top: 0.5rem;
+      right: -23.5rem;
+    }
+
+    &__pattern--two::before {
+      top: 0.44rem;
+      left: -8.06rem;
+    }
+
+    &__pattern--two::after {
+      top: 0.5rem;
+      left: -23.5rem;
+    }
+
+    &__pattern--three::before {
+      top: 5.31rem;
+      right: -25.75rem;
+    }
+
+    &__pattern--three::after {
+      top: 0.5rem;
+      right: -23.5rem;
+    }
+  }
+}
