@@ -2,6 +2,7 @@ import IntroBlock from "../components/blocks/IntroBlock";
 import BenefitBlock from "../components/blocks/BenefitBlock";
 import BenefitsImgFour from "/src/assets/images/digital-era.jpg";
 import BenefitsImgFive from "/src/assets/images/better-living.jpg";
+import Values from "../sections/home/Values";
 
 function About() {
   return (
@@ -30,6 +31,7 @@ function About() {
           />
         </div>
       </section>
+      <Values />
     </>
   );
 }
