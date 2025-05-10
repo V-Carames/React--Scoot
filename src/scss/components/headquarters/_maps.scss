@@ -1,0 +1,10 @@
+.locations__map {
+  position: relative;
+  margin-bottom: 2.13rem;
+}
+
+@media (min-width: 43.75em) {
+  .locations__map {
+    margin-bottom: 4rem;
+  }
+}
