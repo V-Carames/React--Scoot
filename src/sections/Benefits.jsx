@@ -1,4 +1,4 @@
-import BenefitBlock from "../components/BenefitBlock";
+import BenefitBlock from "../components/blocks/BenefitBlock";
 import BenefitsImgOne from "/src/assets/images/telemetry.jpg";
 import BenefitsImgTwo from "/src/assets/images/near-you.jpg";
 import BenefitsImgThree from "/src/assets/images/payments.jpg";
