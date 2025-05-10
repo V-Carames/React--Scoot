@@ -1,8 +1,10 @@
+import IntroBlock from "../components/blocks/IntroBlock";
+
 function Locations() {
   return (
-    <div>
-      <h1>"Locations" Page</h1>
-    </div>
+    <>
+      <IntroBlock className="intro-block--locations" heading="Locations" />
+    </>
   );
 }
 

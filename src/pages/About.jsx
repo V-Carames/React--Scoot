@@ -1,8 +1,10 @@
+import IntroBlock from "../components/blocks/IntroBlock";
+
 function About() {
   return (
-    <div>
-      <h1>"About" Page</h1>
-    </div>
+    <>
+      <IntroBlock className="intro-block--about" heading="About" />
+    </>
   );
 }
 

@@ -1,8 +1,10 @@
+import IntroBlock from "../components/blocks/IntroBlock";
+
 function Careers() {
   return (
-    <div>
-      <h1>"Careers" Page</h1>
-    </div>
+    <>
+      <IntroBlock className="intro-block--careers" heading="Careers" />
+    </>
   );
 }
 

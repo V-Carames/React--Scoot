@@ -1,7 +1,17 @@
+import IntroBlock from "../components/blocks/IntroBlock";
+
 function NotFound() {
   return (
     <div>
-      <h1>"Not Found" Page</h1>
+      <IntroBlock
+        className="intro-block--404"
+        heading={
+          <>
+            <span className="intro-block__error">404</span> Something went
+            wrong...
+          </>
+        }
+      />
     </div>
   );
 }
