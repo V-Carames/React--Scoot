@@ -1,0 +1,22 @@
+.headquarters-section {
+  position: relative;
+  display: grid;
+  justify-content: center;
+
+  padding: 0 2rem;
+  margin-bottom: 4.5rem;
+}
+
+@media (min-width: 43.75em) {
+  .headquarters-section {
+    max-width: 47.19rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 73.44em) {
+  .headquarters-section {
+    max-width: 73.44rem;
+    margin: 0 auto 3.5rem auto;
+  }
+}
