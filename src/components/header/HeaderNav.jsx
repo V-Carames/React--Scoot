@@ -79,7 +79,7 @@ function HeaderNav() {
             </Link>
           </li>
           <li className="header__nav-menu-item" role="listitem">
-            <Link to="/location" className="header__nav-menu-link">
+            <Link to="/locations" className="header__nav-menu-link">
               Location
             </Link>
           </li>
