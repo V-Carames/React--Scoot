@@ -1,0 +1,129 @@
+.intro-block {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--about,
+  &--careers,
+  &--locations {
+    text-align: center;
+
+    padding: 3.75rem 2rem 3.75rem 2rem;
+    margin-bottom: 4.5rem;
+    margin-top: 4rem;
+  }
+
+  &--about {
+    background-image: url(/src/assets/images/about-hero-mobile.jpg);
+  }
+
+  &--careers,
+  &--locations {
+    background-image: url(/src/assets/images/careers-location-hero-mobile.jpg);
+  }
+
+  &--404 {
+    display: grid;
+    place-content: center;
+
+    text-align: center;
+
+    padding: 140px 2rem 140px 2rem;
+
+    background-image: url(/src/assets/images/home-hero-mobile.jpg);
+  }
+
+  &__content--about,
+  &__content--locations,
+  &__content--careers {
+    max-width: 77.63rem;
+    margin: 0 auto;
+  }
+
+  &__content {
+    max-width: 77.63rem;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-family: var(--ff-two);
+    font-weight: var(--ff-700);
+    font-size: var(--fs-40);
+    line-height: 1;
+    letter-spacing: -0.11rem;
+    color: var(--neutral-clr-one);
+  }
+}
+
+@media (min-width: 43.75em) {
+  .intro-block:before {
+    position: absolute;
+    content: url(src/assets/patterns/white-circles.svg);
+    top: 6.25rem;
+    right: -1.94rem;
+  }
+
+  .intro-block--about {
+    background-image: url(/src/assets/images/about-hero-mobile.jpg);
+
+    padding: 6.5rem 2rem 4.5rem 5.94rem;
+    margin-bottom: 9rem;
+  }
+
+  .intro-block--careers,
+  .intro-block--locations {
+    background-image: url(/src/assets/images/careers-location-hero-mobile.jpg);
+
+    padding: 6.5rem 2rem 4.5rem 5.94rem;
+    margin-bottom: 9rem;
+  }
+
+  .intro-block--404 {
+    padding: 220px 2rem 180px 2rem;
+
+    background-image: url(/src/assets/images/home-hero-tablet.jpg);
+
+    &:before {
+      content: none;
+    }
+  }
+
+  .intro-block__heading {
+    font-size: var(--fs-56);
+    line-height: 1;
+    letter-spacing: -0.16rem;
+    text-align: start;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .intro-section--about {
+    background-image: url(/src/assets/images/about-hero-mobile.jpg);
+
+    text-align: start;
+
+    padding: 6.5rem 2rem 4.5rem 10.31rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .intro-section--careers,
+  .intro-section--locations {
+    background-image: url(/src/assets/images/careers-location-hero-mobile.jpg);
+
+    text-align: start;
+
+    padding: 6.5rem 2rem 4.5rem 10.31rem;
+
+    margin-bottom: 7.5rem;
+  }
+
+  .intro-section--careers {
+    margin-bottom: 7.06rem;
+  }
+
+  .intro-section--404 {
+    padding: 20rem 2rem 220px 2rem;
+
+    background-image: url(/src/assets/images/home-hero-desktop.jpg);
+  }
+}
