@@ -30,6 +30,27 @@
     top: -0.06rem;
     right: -34.63rem;
   }
+
+  &__pattern--four::before {
+    position: absolute;
+    content: url(src/assets/patterns/left-upward-arrow.svg);
+    top: 8rem;
+    right: -26.5rem;
+  }
+
+  &__pattern--five::before {
+    position: absolute;
+    content: url(src/assets/patterns/right-arrow.svg);
+    top: -0.44rem;
+    left: -8.5rem;
+  }
+
+  &__pattern--six::before {
+    position: absolute;
+    content: url(src/assets/patterns/left-downward-arrow.svg);
+    top: 10.31rem;
+    right: -26.5rem;
+  }
 }
 
 @media (min-width: 43.75em) {
@@ -96,6 +117,50 @@
 
       z-index: -4;
     }
+
+    &__pattern--four::before {
+      top: 16.44rem;
+      right: -2.38rem;
+    }
+
+    &__pattern--four::after {
+      position: absolute;
+      content: url(src/assets/patterns/circle.svg);
+      top: 0;
+      right: -23.88rem;
+
+      z-index: -4;
+    }
+
+    &__pattern--five::before {
+      top: 0.13rem;
+      left: -8.13rem;
+    }
+
+    &__pattern--five::after {
+      position: absolute;
+      content: url(src/assets/patterns/circle.svg);
+      top: -0.06rem;
+      left: -23.56rem;
+
+      z-index: -4;
+    }
+
+    &__pattern--six::before {
+      position: absolute;
+      content: url(src/assets/patterns/left-downward-arrow.svg);
+      top: 18.69rem;
+      right: -2.38rem;
+    }
+
+    &__pattern--six::after {
+      position: absolute;
+      content: url(src/assets/patterns/circle.svg);
+      bottom: 22.56rem;
+      right: -23.88rem;
+
+      z-index: -4;
+    }
   }
 }
 
@@ -143,6 +208,35 @@
 
     &__pattern--three::after {
       top: 0.5rem;
+      right: -23.5rem;
+    }
+
+    &__pattern--four::before {
+      top: 16.44rem;
+      right: -2rem;
+    }
+
+    &__pattern--four::after {
+      right: -23.5rem;
+    }
+
+    &__pattern--five::before {
+      top: 0;
+      left: -8.07rem;
+    }
+
+    &__pattern--five::after {
+      top: -0.06rem;
+      left: -23.56rem;
+    }
+
+    &__pattern--six::before {
+      top: 19.13rem;
+      right: -2rem;
+    }
+
+    &__pattern--six::after {
+      bottom: -0.38rem;
       right: -23.5rem;
     }
   }
