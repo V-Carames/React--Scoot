@@ -2,6 +2,7 @@ import IntroBlock from "../components/blocks/IntroBlock";
 import BenefitBlock from "../components/blocks/BenefitBlock";
 import BenefitsImgSix from "/src/assets/images/join-us.jpg";
 import Values from "../sections/home/Values";
+import JobListings from "../sections/JobListings";
 
 function Careers() {
   return (
@@ -20,6 +21,7 @@ function Careers() {
         </div>
       </section>
       <Values />
+      <JobListings />
     </>
   );
 }
